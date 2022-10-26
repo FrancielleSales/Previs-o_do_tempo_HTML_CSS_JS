@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <form action="">
+        <div class="clTitle ">
+            <h1>Previsão do tempo das maiores cidades de Santa Catarina</h1>
+        </div>
+        <fieldset class="clFieldset">
+            <div>
+                <label class="clCity" for="idCityCode">Selecione a cidade</label>
+                <div class="clCity">
+                    <select name="nmCities" id="idCities">
+                        <option value="455873">Joinville</option>
+                        <option value="90200648">Florianópolis</option>
+                        <option value="455846">Blumenau</option>
+                        <option value="450398">São José</option>
+                        <option value="455854">Chapecó</option>
+                        <option value="455870">Itajaí</option>
+                        <option value="455856">Criciúma</option>
+                        <option value="456283">Jaraguá do Sul</option>
+                        <option value="460341">Palhoça</option>
+                        <option value="455877">Lajes</option>
+                    </select>
+                </div>
+                <div class="clButton">
+                    <button type="button" id="idBtCheck" class="clButton">Obter previsão</button>
+                </div>
+            </div>
+        </fieldset>
+        <div>
+            <fieldset class="clFieldset" id="idFildsetResult">
+                <div class="clResult">
+                    <!--Date-->
+                    <p id="idDate"></p>
+                    <!--City name-->
+                    <p id="idCityName"></p>
+                    <!--Weather condition-->
+                    <p id="idWeather"></p>
+                    <!--Temperature-->
+                    <p id="idTemperature"></p>
+                    <!--Humidity conditions-->
+                    <p id="idHumidity"></p>
+                    <!--Sunrise-->
+                    <p id="idSunrise"></p>
+                    <!--Sunset-->
+                    <p id="idSunset"></p>
+                </div>
+            </fieldset>
+        </div>
+    </form>
+</body>
+
+<script src="myscript.js"></script>
+
+</html>
